@@ -1235,7 +1235,7 @@
   $("#create-table").on("click", function (event) {
     $.get("/api/", function (data) {
 
-      climatedata = data;
+      var climatedata = data;
       console.log('**button**');
       for (let i = 0; i < climatedata.length; i++) {
       $("#form-row").append(
